@@ -1,6 +1,6 @@
 <?php
 
-class Beans_Tmall extends Beans_Base {
+class Beans_TmallProduct extends Beans_Base {
 
     private $Product_Info = array(
         'prod_t_id' => '', // 产品再淘宝的id.
