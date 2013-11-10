@@ -1,0 +1,407 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 6, 2013, 6:03:17 PM
+    Author     : sunyuw
+*/
+
+@charset "utf-8";
+/* CSS Document */
+em{ font-style:normal}
+body{background:url(../img/icon1.png);}
+a,a *{cursor: pointer;}
+
+/*头*/
+#toolbar{width:100%; height:30px; background:#f8f8f8;color:#333; line-height:30px; border-bottom:1px solid #b10000; position:relative; z-index:10001}
+.toolbar{ position:relative; z-index:100000;color: #D5D5D5;}
+.toolbar .flow{margin:3px 0 0 10px;height: 24px;overflow: hidden;}
+.toolbar .l{position:relative;_padding-top:5px;width: 270px;height: 30px;text-align: left;overflow: hidden;white-space: nowrap;}
+.toolbar .l .yqhy i{width:51px;height:18px;display:inline-block;background:url(http://z0.tuanimg.com/v1/2012/images/top_icon_2.png) no-repeat -36px 0;_background:url(http://z0.tuanimg.com/v1/2012/images/top_icon_2_ie6.png) no-repeat -36px 0;font-style: normal;text-align: center;line-height: 18px;color:#fff;}
+.toolbar .digtao{width:180px;height:52px;background:url(http://z0.tuanimg.com/v1/2012/images/top_icon_2.png) no-repeat -87px 0;_background:url(http://z0.tuanimg.com/v1/2012/images/top_icon_2_ie6.png) no-repeat -87px 0;position: absolute;right:145px;top:25px;}
+.toolbar .digtao a.clo{width:15px;height:15px;position: absolute;right:4px;top:9px;display: inline-block;}
+.toolbar .digtao a.img{width:35px;height:35px;position: absolute;left:10px;top:11px;display: inline-block;}
+.toolbar .digtao a.txt{position: absolute;left:53px;top:12px;font-size: 14px;}
+.toolbar .right em{color:#333}
+.toolbar .right em .user{color:#cc0000;}
+.toolbar .right em .maxuser{height: 30px;overflow: hidden;vertical-align: top;*vertical-align: middle;max-width: 180px;display: inline-block;}
+/*等级图标*/
+.toolbar .right em .usz0,.toolbar .right em .usz1,.toolbar .right em .usz2,.toolbar .right em .usz3,.toolbar .right em .usz4,.toolbar .right em .usz5{display: inline-block;width: 20px;height: 20px;background: url(../img/tb_bg.png) no-repeat 1px -2px;vertical-align: middle; }
+.toolbar .right em .usz1{background-position: -22px -2px;}
+.toolbar .right em .usz2{background-position: -50px -2px;}
+.toolbar .right em .usz3{background-position: -77px -2px;}
+.toolbar .right em .usz4{background-position: -103px -2px;}
+.toolbar .right em .usz5{background-position: -127px -2px;}
+/*我的收藏*/
+.toolbar .right .mco{display: inline-block;*display: inline;height:30px;width: 66px;margin: 0 3px;position: relative;vertical-align: top;*vertical-align: middle;}
+.toolbar .right .mcoa{display: inline-block;height:28px;width: 54px;padding-right:10px;background:#f8f8f8 url(../img/tb_co.png) no-repeat -126px 5px;_background:#f8f8f8 url(../img/tb_co_ie6.png) no-repeat -126px 5px;border:1px solid #f8f8f8;}
+.toolbar .right .mcoa:hover{color:#333;text-decoration: none;}
+.toolbar .right .mco div{width: 390px;position: absolute;left:0;top:30px;background: #f8f8f8;display:none;padding-bottom: 3px;}
+.toolbar .right .mco ul{border:1px solid #c9c9c9;text-align: left;}
+.toolbar .right .mco ul li{height: 69px;background: #fff;border-bottom: 1px dotted #d8d8d8;color:#333;}
+.toolbar .right .mco ul li img{width: 75px;height: 49px;float:left;}
+.toolbar .right .mco ul li span{float:left;height: 49px;width: 200px;overflow: hidden;line-height: 16px;padding:10px 0 10px 10px;}
+.toolbar .right .mco ul li span.w2,.toolbar .right .mco ul li span.w3{width: 60px;font-family: "微软雅黑";word-break:break-all;word-wrap:break-word;}
+.toolbar .right .mco ul li span.w3{width: 60px;text-align: center;}
+.toolbar .right .mco ul li span.w4{width: 15px;overflow: visible;}
+.toolbar .right .mco ul li .w1 em{float:left;width: 118px;height: 48px;padding-left: 7px;overflow: hidden;}
+a.coys,a.cotn{display: inline-block;width: 14px;height: 14px;background: url(../img/tb_co.png) no-repeat 0 -1px;_background: url(../img/tb_co_ie6.png) no-repeat 0 -1px;vertical-align: middle;}
+a.coys:hover{background-position: -16px -1px;}
+a.cotn{background-position: -31px -1px;}
+a.cotn:hover{background-position: -46px -1px;}
+span.diacol{border:1px solid #c9c9c9;background: #fffbeb;position: absolute;left:-150px;top:-5px;width: 120px;text-align: center;padding: 10px;color:#955d35;}
+span.diacol .close{position: absolute;top:5px;right:5px;display:block;width:10px;height:10px;background:url(http://css.tuan800.net/global/images/bg_content.png) -388px -181px;cursor:pointer;overflow: hidden;}
+span.diacol .close:hover{background-position: -388px -147px;}
+span.diacol .btn,span.diacol .rel{width:35px;height:20px;margin:0 2px;line-height:20px;color:#fff;display: inline-block;background: #cc0000;border:1px solid #cc0000;border-color: #cc0000 #a50000 #a50000 #cc0000;}
+span.diacol a:hover{text-decoration: none;color:#fff;}
+span.diacol .rel,span.diacol .rel:hover{background: #fafafa;border-color: #fafafa #cac4ab #cac4ab #fafafa;color:#955d35;}
+span.diacol p{line-height: 30px;}
+.toolbar .right .mco ul li.more{height:30px;line-height: 30px;background: #f8f8f8;text-align: right;border: none;padding-right: 10px;}
+.toolbar .right .mco ul li.more a{color:#09c;}
+.toolbar .right .mco ul li.tit,.toolbar .right .mco ul li.tit span{height:30px;line-height: 30px;background: #f8f8f8;font-family: "";}
+.toolbar .right .mco ul li.tit span{padding:0 0 0 10px;}
+.toolbar .right .mcoon .mcoa{border:1px solid #c9c9c9;border-bottom: none;height:30px;position: relative;z-index: 2;}
+.toolbar .right .mcoon div{display: block;}
+.toolbar .right .mco ul li.ncent{background: #f8f8f8;border: none;text-align: center;color:#955d35;line-height: 20px;padding: 20px 0;height: auto;}
+.toolbar .right .mco ul li.ncent p{font-size: 14px;}
+.toolbar .right .mco ul li.ncent b{display: inline-block;width: 18px;height: 18px;background: url(../img/tb_co.png) no-repeat -320px 0;_background: url(../img/tb_co_ie6.png) no-repeat -320px 0;vertical-align: middle;}
+.toolbar .right .mco ul li.loading{background:#fff url(http://z0.tuanimg.com/v1/profile/img/loading.gif) no-repeat center center;}
+
+.mycol_msg{width: 125px;height: 24px;line-height: 24px;position: absolute;top:30px;right:270px;background: #fffbeb;border:1px solid #c9c9c9;text-align: left;text-indent: 12px;color:#955d35;}
+.mycol_msg span {background: url("http://css.tuan800.net/global/images/bg_content.png") -388px -181px;cursor: pointer;display: block;height: 10px;position: absolute;right: 5px;top: 5px;width: 10px;overflow: hidden;}
+.mycol_msg span:hover{background-position: -388px -147px;}
+.mycol_msg em {background: url("../img/tb_co.png") -289px 0;_background: url("../img/tb_co_ie6.png") -289px 0;display: block;height: 7px;position: absolute;left: 80px;top: -7px;width: 11px;overflow: hidden;}
+
+/*
+
+#attentionTao{position:absolute; right:50px;width:190px;top:20px; text-align:left;padding:10px 10px 0;color:#000; line-height:22px;display:none;}
+#attentionTao a{color:#d50; float:right;background: url(http://z0.tuanimg.com/v1/2012/images/weibo_bg.png) no-repeat 0 0; height:25px;width: 59px;}
+#attentionTao a:hover{ background-position:-60px 0}
+#attentionTao span{width: 172px; float:left;margin-top:4px}
+#attentionTao em{background: url(http://z0.tuanimg.com/v1/2012/images/icon_bg.png) no-repeat -16px -164px ;display: block;font-size: 0;height: 7px;line-height: 0;width: 190px;}
+#attentionTao p{background:#FFFBEB;line-height: 20px;padding:5px 8px;width: 172px; border:1px solid #C9C9C9; border-top:0;color:#e20050; overflow:hidden;}
+#attentionTao h3{width: 172px; float:left; border-left:1px solid #C9C9C9;border-right:1px solid #C9C9C9;background:#FFFBEB; padding: 0 8px; text-align:right; font:0/0 ""}
+#attentionTao h3 u{background: url(http://z0.tuanimg.com/v1/2012/images/collection_bg.png) no-repeat 0 -21px ;cursor: pointer;display:inline-block;height:10px;font:0/0 "";margin-top: 5px;padding-left: 10px;vertical-align: middle;}
+#attentionTao p small{font-size:12px}
+
+#everyDayNine{position:absolute; left:180px;width:170px;top:30px; text-align:left;padding:10px 10px 0;color:#000; line-height:22px;}
+#everyDayNine p a{color:#d50; float:right;background:url(http://z0.tuanimg.com/v1/2012/images/tao_20126.07bg1.png) 0 -75px no-repeat;line-height:25px;height:25px;width: 59px; text-align:center; text-decoration:none;color:#333}
+#everyDayNine p a:hover{background-position:-60px -75px;}
+#everyDayNine i{width: 148px; float:left; padding:0 5px; font-style:normal}
+#everyDayNine em{background: url(http://z0.tuanimg.com/v1/2012/images/tao_20125.16bg.png) no-repeat 0 0 ;display: block;font-size: 0;height: 7px;line-height: 0;width: 170px;}
+#everyDayNine p span{width:158px; height:11px; font:0/0 ""; text-align:right; display:inline-block; padding-top:3px}
+#everyDayNine p span a{width:11px;height:11px; display:inline-block; background:url(http://z0.tuanimg.com/v1/2012/images/tao_20126.07bg1.png) -11px -62px no-repeat}
+#everyDayNine p span a:hover{ background-position:0 -62px}
+#everyDayNine p{background:#FFFBEB;line-height: 20px;padding:0 5px 10px;width: 158px; border:1px solid #C9C9C9; border-top:0;color:#666; overflow:hidden}
+#everyDayNine small{font-size:12px; padding:0 6px;width:146px; float:left}*/
+
+/*icon2.png背景*/
+.header .clientLink,.header .sc,.header .sc i,.header .dy,.header .fx,.head_nav .r .signin_a,.head_nav .r .signin_on  span.signin_a,.topf a.def,.topf a.def:hover{background:url(../img/icon2_4.png) no-repeat;}
+
+.header{width:100%; background:url(../img/bg.png) left top repeat-x; height:72px}
+.header h1{overflow:hidden; height:54px}
+.header h1 .l img{vertical-align:top}
+.header .clientLink{width:128px;height:22px;float:left;display:inline;margin:25px 0 0 20px;background-position: 0 0;}
+.header .sc{width:39px;height:39px;margin-top:15px;background-position: -83px -115px;position: relative;z-index:10000;}
+.header .sc:hover{background-position: -125px -116px;}
+.header .sc i{width:65px;height:25px;display:none;position: absolute;left:-13px;top:-28px;z-index:10000;background-position: -176px -1px;}
+.header .sc:hover i{display:inline-block;}
+.header .dy{width:39px;height:39px;display:inline;margin:15px 10px 0 0;background-position: -42px -115px;}
+.header .dy input{display:none;}
+.header .dyon{width:245px;background-position: 0 -61px;text-align: left;}
+.header .dyon input{display:inline;border:none;background: none;}
+.header .dyon .int{height: 20px; line-height: 20px; margin: 9px 0px 0px 50px; width: 130px;}
+.header .dyon .btn{padding: 0px; margin: 3px 0px 0px 1px; height: 25px; width: 48px; cursor: pointer;}
+.header .fx{width:39px;height:39px;display:inline;margin:15px 10px 0 0;background-position: -1px -115px;}
+.header .fxon{background-position: 0 -21px;text-align: left;font-size: 0px;letter-space: -8px;}/*width:172px;*/
+.header .fxon a{width:20px;height:22px;display:inline-block;margin:8px 0 0 4px;}
+.header .fxon a.sina{margin-left:40px;}
+
+#head_nav{width:100%; background:url(../img/bg.png) left bottom repeat-x; height:43px;}
+#head_nav .area{height:40px;}
+.head_nav .l{position: relative;}
+.head_nav .l a{width:100px;float:left;height:39px;border-right:1px solid #d7412c;overflow: hidden;}
+.head_nav .l a.first{border-left:1px solid #d7412c;}
+.head_nav .l a.on,.head_nav .l a.on:hover{background: #920e01;}
+.head_nav .l a:hover{background: #920e01;}
+.head_nav .l a,.head_nav .r a{color:#fff;font:14px/40px "";}
+.head_nav .l a{ text-decoration:none;}
+.head_nav .r{text-align:left;padding-right:80px;position: relative;z-index: 10000;}
+.head_nav .r a.on{color:#ffd696}
+.head_nav .r a{margin:0 10px;display:inline-block;}
+.head_nav .r a.alink{margin-left:110px;}
+.head_nav .r em{width:2px;font:0/0 ""; height:40px; background:url(http://z0.tuanimg.com/v1/2012/images/tao_20125.16bg2.png) -239px -63px no-repeat; display:inline-block; vertical-align:top}
+.head_nav .r i{width:14px; height:38px; background:url(http://z0.tuanimg.com/v1/2012/images/tao_20125.16bg2.png) -241px -63px no-repeat; float:left;margin-right:10px}
+.head_nav .r i.i1{ background-position:-241px -63px}
+.head_nav .r i.i2{ background-position:-256px -63px}
+.head_nav .l .zhibg{width:36px;height:15px;display:inline-block;background:url(http://z0.tuanimg.com/v1/2012/images/top_icon_2.png);_background:url(http://z0.tuanimg.com/v1/2012/images/top_icon_2_ie6.png);position: absolute;top:0;left: 205px;}
+.head_nav .l span.n{display: none;width: 13px;height: 11px;position: absolute;left:276px;top:10px;background: url(http://z0.tuanimg.com/v1/zhi/guang/img/icon.png) no-repeat -92px 0;overflow: hidden;}
+
+/*底*/
+.foot_bg{background:#fff url(http://z0.tuanimg.com/v1/2012/images/foot_bg2.png) repeat-x;margin-top:20px;}
+.about {margin-top:20px;margin-top:0; padding-top:20px;border-bottom:1px solid #f3f3f3;}
+.about .top{width:980px;height:19px; float:left; }
+.about .bottom{width:980px;height:19px; float:left}
+.about .mid{width:980px;float:left}
+.about .mid dl{float:left; line-height:24px; text-align:left}
+.about .mid dl dt{font-size:14px; line-height:30px;color:#000}
+.about .mid dl dd a{color:#09c}.about .mid dl dd a:hover{color:#cc0000}
+.about .mid dl.dl1{ padding:0 20px;width:125px}
+.about .mid dl.dl2{ padding:0 20px;width:135px}
+.about .mid dl.dl3{width:280px; text-align:center;margin-left:5px;}
+.about .mid dl.dl3 img{float:left;}
+.about .mid dl.dl3 span.fewm{float:left;width:100px;height:100px;background: url(../img/fewm.png) no-repeat 0 0;}
+.about .mid dl.dl3 p{float:right;width:175px;text-align: left;font:400 15px/24px "微软雅黑";color:#333;}
+.about .mid dl.dl3 span{display:inline-block;font: 400 12px/20px "";color:#666;padding-top:10px;}
+.about .mid dl.dl3 span i{display: inline-block;height:14px;width:14px;background: url(http://z0.tuanimg.com/v1/2012/images/tao-footer-bg.png);text-align: center;line-height: 14px;margin-right:5px;font-style: normal;}
+.about .mid dl.dl3 span em{color:#cc0000;font-style: normal;}
+.about .mid dl.dl1 a.sina{background: url(http://z0.tuanimg.com/v1/2012/images/sina_new.png) no-repeat 0 0; padding-left:20px}
+.about .mid dl.dl1 a.tao_small{background: url(http://z0.tuanimg.com/v1/2012/images/tao_small.png) no-repeat 0 0; padding-left:20px}
+.about .mid dl.dl1 a.tao_mobile{background: url(http://z0.tuanimg.com/v1/2012/images/tao_mobile.png) no-repeat 0 0; padding-left:20px}
+.taowenwidls{float:left;width:100%;}
+.footer{margin-top:20px;height:60px; line-height:30px;}
+.footer img{ vertical-align:middle;margin-left:10px; border:1px solid #c3bfbe}
+#taowenwid{text-align:left;}
+#taowenwid .taowen{width:346px;height:87px;background:url(http://z0.tuanimg.com/v1/2012/images/taowen_bg.png);padding:10px 10px 0;line-height: 20px;}
+#taowenwid .taowen a{color:#D80000;}
+#dialog_taowenwidto{position: absolute;}
+
+/*弹窗-默认样式*/
+.diglog-wrapper{position: absolute;background:#fffbeb;border: 5px solid #e6e6e6;z-index: 100000;}
+.diglog-wrapper .diginfo{padding:10px 20px;border:1px solid #c9c9c9;}
+.diglog-wrapper .diginfo em{margin-left:5px;}
+.diglog-wrapper .diginfo u{float:left;width:18px;height:18px;overflow:hidden;background: url(http://css.tuan800.net/global/images/msg.png);}
+.diglog-wrapper .diginfo u.m0{background:none;display:none}
+.diglog-wrapper .diginfo u.m1{background-position:0 0;}
+.diglog-wrapper .diginfo u.m2{background-position:0 -18px;}
+.diglog-wrapper span.close{position: absolute;top:5px;right:5px;display:block;width:10px;height:10px;background:url(http://css.tuan800.net/global/images/bg_content.png) -388px -181px;cursor:pointer;}
+.diglog-wrapper a:hover span.close{background-position: -388px -147px;}
+
+/*弹窗样式*/
+#dialog_empty_deal{border:none;background:none;width:380px;height:210px;position:absolute;z-index:99999}
+#dialog_empty_deal .diginfo{ border:0}
+#dialog_empty_deal span.close{width:32px;height:32px; display:block; position:absolute; top:17px;right:-12px; background:url(http://z0.tuanimg.com/v1/2012/images/tao_20125.22bg2.png) 0 0 no-repeat; _background:url(http://z0.tuanimg.com/v1/2012/images/tao_20125.22bg3.png) 0 0 no-repeat; z-index:4}
+#dialog_empty_deal.diglog-wrapper-ad{width:auto;height:auto;border: 5px solid #B2B2B2;background:#fff;font-size: 14px;line-height: 26px;position:absolute;z-index:99999}
+#dialog_empty_deal.diglog-wrapper-ad span.close,#signal_diglog.diglog-wrapper a:hover span.close{background: url("http://z0.tuanimg.com/v1/2012/images/tao_20125.22bg2.png") no-repeat scroll 0 0 transparent;display: block;height: 32px;position: absolute;right: -15px;top: -15px;width: 32px;z-index: 4;_background:url(http://z0.tuanimg.com/v1/2012/images/tac_ie6_clo.png);_width:28px;_height:28px;}
+#dialog_empty_deal .diginfo{padding:10px 20px;}
+
+/*签到*/
+.head_nav .r .signin{float:right;height:40px;line-height: 40px;width:74px;position: absolute;top:0;right:0;z-index: 10000;}
+.head_nav .r .signin_a{display:inline-block;background-position: -167px -109px;width:74px;height:27px;line-height: 29px;text-align: center;margin:0;margin-top:5px;text-decoration: none;}
+.head_nav .r span.signin_a{display:none;}
+.head_nav .r .signin dl{width:175px;position: absolute;top:40px;right:0;line-height: 20px;background:#fff;display:none;}
+.head_nav .r .signin dt{padding:0 10px;line-height: 26px;border:1px solid #e6e6e6;border-bottom: none;padding-bottom:5px;}
+.head_nav .r .signin dt span,.head_nav .r .signin dt b{font-family: arial;font-size: 14px;font-weight: bold;}
+
+.head_nav .r dt a,.head_nav .r dt a:hover{margin: 0;color:#333;text-decoration: none;}
+.head_nav .r .topf dt a,.head_nav .r .topf dt a:hover{font-weight: bold;}
+
+.head_nav .r .signin dt b.b2{color:#c41303;}
+.head_nav .r .signin dd{padding:5px 10px;border:1px solid #e6e6e6;border-width: 0 1px;}
+.head_nav .r .signin dl a{height:auto;margin:0;font-size:12px;line-height: 20px;color:#3399CC;display:inline;}
+.head_nav .r .signin dd.tbor{background: #fafafa;}
+.head_nav .r .signin dd.tbor b{font-weight: normal;color:#c00;padding:0 3px;}
+.head_nav .r .signin dd.bomback{height:4px;padding:0;padding-left:4px;margin:0;border:none;overflow:hidden;background:#fff url(http://z0.tuanimg.com/v1/2012/images/top_icon_1.png) no-repeat 0 0;}
+.head_nav .r .signin dd.bomback span{height:4px;float:left;width: 100%;background:#fff url(http://z0.tuanimg.com/v1/2012/images/top_icon_1.png) no-repeat right 0;}
+.head_nav .r .signin_on  a.signin_a{display:none;}
+.head_nav .r .signin_on  span.signin_a{display:block;background-position: -167px -141px;}
+
+/*导航-帮助中心入口*/
+.topf{float: right;width:110px;position: absolute;right:155px;top:0;}
+.topf a.def,.topf a.def:hover{width:102px;height: 39px;margin:0 4px;background-position:-8px -162px;text-decoration: none;overflow: hidden;}
+.topf dl{display:none;background:#f7f7f7;border:1px solid #999;position: absolute;width:110px;left:-5px;top:2px;}
+.topf dt{font:800 14px/34px "";background:#eee url(http://z0.tuanimg.com/v1/2012/images/top_icon_2.png) no-repeat -175px -91px;padding-left: 10px;color:#333;}
+.topf dd{padding:5px;}
+.head_nav .r .topf dd a{color:#666;display:block;margin:0;font: 12px/30px "";padding-left: 10px;}.head_nav .r .topf dd a:hover{background:#eee;text-decoration: none;}
+.topfon a.def{display:none;}
+.topfon dl{display:block;}
+
+/*分类专区
+.classifi{background:#fff url(http://z0.tuanimg.com/v1/2012/images/tao_indnav1.png) repeat-x 0 76px; position:relative; z-index:9999;margin-bottom: 20px;}
+.classifi .area{height:80px;background:url(http://z0.tuanimg.com/v1/2012/images/tao_indnav2.png) no-repeat center bottom;}
+.classifi .area div{height:76px;text-align:left;overflow:hidden;}
+.classifi div.cL{float:left;width:584px;padding-left:10px;}
+.classifi div.mid{float:left;width:305px;padding-left:10px;border-left: 1px dotted #b2b2b2;}
+.classifi div.r{width:69px;border-left: 1px dotted #b2b2b2;background:#f3f3f3;}
+.classifi .area div a,.classifi .area div em{height: 25px;padding-left:8px;vertical-align: top;float:left;display:inline;margin:0 5px 9px 0;_margin-right:4px;line-height: 25px;font-size:14px;white-space:nowrap;}
+.classifi .area div a em{padding:0 8px 0 0;margin:0;}
+.classifi .area div a.on,.classifi .area div a:hover,.classifi .area div a.on:hover{background: url(http://z0.tuanimg.com/v1/2012/images/tao_indnav1.png) no-repeat left -4px;text-decoration:none;}
+.classifi .area div a.on em,.classifi .area div a:hover em,.classifi .area div a.on:hover em{background: url(http://z0.tuanimg.com/v1/2012/images/tao_indnav1.png) no-repeat right -4px;color:#333;}
+.classifi .area div span{display:block;font:800 16px/40px "微软雅黑";color:#333;}
+.classifi div.r a{height:40px;padding:0;margin:16px 19px;font:800 14px/20px "";color:#09c;}
+.classifi div.r a,.classifi div.r a em{white-space:normal;}*/
+
+.defaback {background: url("http://z0.tuanimg.com/v1/2012/images/i3.png") repeat scroll 0 -122px transparent;cursor: pointer;display: inline-block;height: 30px;line-height: 30px;padding-left: 20px;}
+.defaback em {background: url("http://z0.tuanimg.com/v1/2012/images/i3.png") repeat scroll right -122px transparent;color: #FFFFFF;display: inline-block;font: bold 16px/30px "微软雅黑";height: 30px;padding-right: 20px;}
+
+/*顶部广告*/
+.topad{padding:10px 0;}
+.topad img{width:980px}
+.topad .fi01{position:relative;cursor:pointer;width:980px;margin:0 auto;float:left;font-size:0;zoom:1;}
+.topad .fi01 .fi_player{width:100%;}
+.topad .fi01 .fi_tt{display: none;}
+.topad .fi01 .fi_tab{height:16px;display:inline;position:absolute;background:#fff;}
+.topad .fi01 .fi_tabRB{right:-1px;bottom:0;_bottom:2px;}
+.topad .fi01 .fi_tab span{width:28px;margin-right:1px;font:9px/10px 'Arial';color:#CECECE;float:left;}
+.topad .fi01 .fi_tab span.now{background-color:#2295a1;}
+.topad .fi01 .fi_tabLB span,.topad .fi01 .fi_tabRB span{height:13px;padding-top:3px;background-color:#666;}
+.topad .fi01 .fi_tabLT span,.topad .fi01 .fi_tabRT span{height:16px;padding-top:0;background-color:#d07325;}
+
+/*左侧快速跳转*/
+.tao_qjump{width:44px;position: fixed;top:170px;left:50%;margin-left:-555px;_position:absolute;_top:expression(190+documentElement.scrollTop +"px");z-index: 100000;}
+.tao_qjump dl{float:left;margin-top:2px;display:inline;position: relative;}
+.tao_qjump dt{width:55px;height:55px;position: relative;z-index: 10001;}
+.tao_qjump dt a,.tao_qjump dt a:hover{width:55px;height:55px;display: block;text-decoration: none;background: url(../img/qjump_bg6.png) 0 0;}
+.tao_qjump dt a.ju{background-position: -55px 0;}.tao_qjump dt a.ju:hover{background-position: 0 0;}
+.tao_qjump dt a.zhi{background-position: 0 -57px;}.tao_qjump dt a.zhi:hover{background-position: -55px -57px;}
+.tao_qjump dt a.guang{background-position: -55px -113px;}.tao_qjump dt a.guang:hover{background-position: 0 -113px;}
+.tao_qjump dt a.bl{background-position: 0 -169px;}.tao_qjump dt a.bl:hover{background-position: -55px -169px;}
+.tao_qjump dt a.sc{background-position: -55px -225px;}.tao_qjump dt a.sc:hover{background-position: 0 -225px;}
+.tao_qjump dt a.kf{background-position: -55px -281px;}.tao_qjump dt a.kf:hover{background-position: 0 -281px;}
+.tao_qjump dt a.yjfk{background-position: -55px -337px;}.tao_qjump dt a.yjfk:hover{background-position: 0 -337px;}
+.tao_qjump dt a.top{background-position: -55px -394px;}.tao_qjump dt a.top:hover{background-position: 0 -394px;}
+/*.tao_qjump dt a.top{background-position: -55px -281px;}.tao_qjump dt a.top:hover{background-position: 0 -281px;}*/
+.tao_qjump dd{position: absolute;top:0;left:50px;background:url(../img/qjump_bg5.png) no-repeat right bottom;text-align: left;display:none;}
+.tao_qjump dd div.tbg{width:306px;background:url(../img/qjump_bg5.png) no-repeat right -32px;padding:5px 13px 0 19px;}
+.tao_qjump dd div.bbg{width:306px;background:url(../img/qjump_bg5.png) no-repeat right bottom;padding:0 22px 0 10px;height:15px;line-height: 0;}
+.tao_qjump dd h2{border-bottom:1px dotted #999;padding:6px 0;line-height: 29px;}
+.tao_qjump dd span a,.tao_qjump dd span a em{background:url(../img/qjump_bg5.png) no-repeat -120px 0;height:29px;display: inline-block;padding-left:10px;cursor: pointer;vertical-align: top;color:#666;font-weight: normal;}
+.tao_qjump dd span a{margin: 6px 5px 0 0;}
+.tao_qjump dd h2 a{font-weight: 800;color:#09c;margin-top:0;}.tao_qjump dd h2 a:hover{text-decoration: none;}
+.tao_qjump dd span a em{line-height: 20px;vertical-align: top;background-position:  right 0;padding:0;padding-right:10px;line-height: 29px;}
+.tao_qjump dd span a:hover,.tao_qjump dd span a:hover em,.tao_qjump dd h2 span a:hover,.tao_qjump dd h2 span a:hover em{color:#09c;text-decoration: none;}
+.tao_qjump dd span a.on em,.tao_qjump dd span a.on:hover em{font-weight: 800;color:#09c;}
+.tao_qjump .dlon dd{display: block;}
+.tao_qjump dl.go_top dt,.feedback_new_bg,.tao_top_page{display:none;}
+
+/*原about1.4.css*/
+.aboutbg{ background:#fff; margin:20px auto}
+.tao_fwtk{font-size: 14px;line-height: 25px;padding:20px;text-align: left;width:940px}
+.tao_fwtk p{text-indent: 2em;}
+.tao_fwtk h2 {font-size: 20px; height:50px; line-height:30px;text-align: center;color:#000}
+.tao_fwtk strong {display: block;padding-top: 25px;color:#000}
+.tao_fwtk p a {color: #005ED9;}
+p.phei {color: #000;padding-top: 10px;}
+.f_links_nav {font-size: 18px;line-height: 35px;padding:20px;text-align: left;width:940px;color: #c00;font-weight: bold;font-family: "微软雅黑";}
+.f_links {text-align: left;width:940px; margin:0 auto}
+.f_links p {display: block;font-weight: bold;height: 40px;line-height: 40px;padding-left: 12px;}
+.f_links ul {background: url(http://z0.tuanimg.com/v1/2012/images/tuan_navlist_bg.png) repeat scroll left top transparent;overflow: hidden;padding-bottom: 20px;width: 940px;}
+.f_links li {float: left;height: 35px;line-height: 35px;overflow: hidden;padding-left: 10px;width: 124px;background: url(http://s0.tuan800.net/2012/static_deploy/images/footer_list1.png)  no-repeat 0 17px}
+.f_links a {color: #666;}
+.f_links a:hover{color: #06C;}
+.f_links h2 {height: 30px;margin-bottom: 10px;border-bottom: 1px solid #E5E5E5;color: #333333;font-size: 14px;line-height: 30px;text-indent: 10px;}
+.f_links_wb{width:920px;padding:10px;background:#f7f7f7;margin:10px auto 20px;text-align: left;line-height: 30px;font-size: 12px;color:#333;}
+.f_links_wb b{display: block;font:bold 18px/30px "微软雅黑";color:#c00;}
+.f_links_wb p{padding:10px;}
+.f_links_wb p em{padding-left: 12px;}
+
+/*签到登录弹窗*/
+#dialog_log_qiandao,#dialog_log_qiandao .diginfo{background: none;border: none;margin: 0;padding: 0;}
+.qd_login{width: 450px;border:1px solid #d6d5bd;}
+.qd_login a{color:#09c;}
+.qd_login a:hover{color:#c00;}
+.qd_login .ht{padding:0 20px;height:72px;background: url(http://z0.tuanimg.com/v1/jifen/welfare/img/weldialog.png) repeat-x 0 -194px;line-height: 72px;text-align: right;}
+.qd_login .ht .logo{float:left;width:187px;height:29px;margin-top: 16px;background: url(http://z0.tuanimg.com/v1/jifen/welfare/img/weldialog.png) repeat-x 0 -115px;overflow: hidden;}
+.qd_login .hc{background: #fff;padding:20px 0;}
+.qd_login .hc h3,.qd_login .hc ul{width:330px;padding:0 50px;float:left;text-align:left;font-size: 14px;line-height: 30px;}
+.qd_login .hc h3{color:#555;font-weight: bold;}
+.qd_login .hc li {padding-top: 10px;}
+.qd_login .hc li input{width:200px;height:20px;padding:4px 10px;background: url(http://z0.tuanimg.com/v1/jifen/welfare/img/weldialog.png) no-repeat 0 -28px;border:none;font-size: 12px;line-height:20px;}
+.qd_login .hc li.btn{font-size: 12px;}
+.qd_login .hc li.btn input{width:68px;height:30px;margin-left:57px;background: url(http://z0.tuanimg.com/v1/jifen/welfare/img/weldialog.png) no-repeat -176px -84px;cursor: pointer;font-size: 16px;}
+.qd_login .hc li.btn a{margin-left:15px;}
+.qd_login .hc li.tb{padding-top: 20px;}
+.qd_login .hc li a.tbbtn{background:url(http://z0.tuanimg.com/v1/jifen/welfare/img/tblogin.png);float:left;width:107px;height:25px;line-height:500px;overflow:hidden;margin-left:57px;}
+#pperrmsg{font-size: 12px;color:#c00;}
+.qd_login .sf {float:left;width:100%;margin-top:10px;border-top: 1px dotted #999;padding: 20px 0 0;}
+.qd_login .sf a{float: left;display: inline;margin-left: 15px;width: 107px;height: 25px;background: url(http://z0.tuanimg.com/v1/login/img/bg1.png) no-repeat 0 0;text-indent: -900px;overflow: hidden;margin-bottom:10px}
+.qd_login .sf a.sina {background-position: 0 0;margin-left: 40px;}
+.qd_login .sf a.qq {background-position: 0 -25px;}
+.qd_login .sf a.taobao {background-position: 0 -50px;}
+.qd_login .sf a.renren{background: url(http://i0.tuan800.net/pp/v2/img/icon2-1.png) no-repeat;margin-left:40px}
+.qd_login .hb {height: 37px;border-top: 1px dotted #d2cd68;background: #fefef3;text-align: right;line-height: 37px;padding: 0 20px;}
+.qd_login .hb input {vertical-align: text-bottom;margin: 0;}
+.hct {background: #fff;line-height: 50px;padding: 20px 0 30px;}
+.hct h3 {font-weight: bold;font-size: 14px;}
+.hct p a {margin: 0 5px;display: inline-block;width: 65px;height: 22px;background: url(../img/mbg.png) no-repeat -253px 0;}
+.hct p a.hl {margin:1px 5px 0;width: 58px;height:21px;background-position: -312px -40px;}
+.hct p a.gz{background: none;overflow: hidden;}
+.qd_login .ht .xllogo {height: 41px;width: 135px;margin-top: 13px;background: url(../img/mbg.png) no-repeat -0 -10px;}
+.qd_login .ht .qqlogo {height: 41px;width: 115px;margin-top: 13px;background: url(../img/mbg.png) no-repeat -135px -10px;}
+.qd_login .hbt{border-top:1px solid #fff;text-indent: 600px;background: #fff;}
+.qd_login .hbt *{display: none;}
+
+/*明日预告弹窗*/
+.classifi .area{position: relative;}
+.classifi div.r{position: absolute;overflow:visible;right:0;top:0;}
+#nicmrmsg{width: 230px;height: 24px;line-height: 24px;text-align: left;text-indent: 10px;border: 1px solid #c9c9c9;background: #fffbeb;z-index: 100;display:block;position: absolute;top: 64px;right:-6px;_position: relative;_top:0;_right:0;_margin: 0px 0 0 -150px;}
+#nicmrmsg em{display: block;padding:0;width: 11px;height: 7px;background: url(../img/mbg.png) no-repeat -313px -31px;overflow: hidden;position: absolute;top: -7px;right:30px;}
+#nicmrmsg i {color: #09c;font-style: normal;cursor: pointer;vertical-align: middle;}
+#nicmrmsg span{position: absolute;top:5px;right:5px;display:block;width:10px;height:10px;background:url(http://css.tuan800.net/global/images/bg_content.png) -388px -181px;cursor:pointer;}
+#nicmrmsg span:hover{background-position: -388px -147px;}
+.head_nav .r .bdsj_ts{display: block;width: 217px;height: 32px;background: url(../img/bdsj.png) no-repeat 0 0;position: absolute;right: 0;top:-28px;}
+.head_nav .r .bdsj_ts span{display: block;width: 10px;height: 10px;position: absolute;right: 5px;top:5px;cursor: pointer;}
+
+/*绑定手机-弹窗*/
+#dialog_bdsj_bangding,#dialog_bdsj_bangding .diginfo{background: #fff;border: none;margin: 0;padding: 0;}
+#dialog_bdsj_bangding .diginfo .bangdtit{width:665px;text-align: left;}
+#dialog_bdsj_bangding .diginfo .bangdtit h3{padding-left:40px;font:bold 22px/50px "微软雅黑";color:#333;background: url("http://z0.tuanimg.com/v1/jifen/welfare/img/weldialog.png") repeat-x 0 -194px;}
+#dialog_bdsj_bangding .diginfo .bangdtit p{padding-left:40px;color:#c00;font:bold 14px/40px "";padding-top: 10px;}
+.reg_box{text-align: left;padding-bottom: 50px;width:665px;}
+.reg_box input{vertical-align: middle;width: 200px;height: 20px;padding: 4px 10px;background: url(../img/bdsj.png) no-repeat 0 -40px;border:none;} 
+.reg_box .item{padding:10px 0 0 108px;width:550px;height:56px;}
+.reg_box .i_code,.reg_box .i_txt{padding-top: 0;}
+.reg_box .item label{margin-left:-100px;text-align: right;float:left;width:100px;height:28px;font: 14px/28px "宋体";display: inline;color:#333}
+.reg_box .item label em{color:#c20000;padding-right:5px;}
+.reg_box .item .i_codeP a,.reg_box .item .i_codeP a:hover{width: 135px;height: 28px;margin-left:10px;line-height: 28px;display: inline-block;background: url(../img/bdsj.png) no-repeat 0 -72px;vertical-align: middle;text-align: center;text-decoration: none;}
+.msg_box{line-height: 28px;height: 28px;overflow: hidden;}
+.msg_box em{display: inline-block;width: 20px;height: 28px;vertical-align: middle;background: url(../img/bdsj.png) no-repeat -84px -108px;}
+.reg_box .item .row1{color:#c20000;}
+.reg_box .item .row1 em{background-position: -143px -108px;}
+.reg_box .item .row2{color:#c20000;}
+.reg_box .item .row2 em{background-position: -114px -108px;}
+.reg_box .item input.btn{display: inline;float:left;margin-right:10px;width: 68px;height: 30px;padding: 0;background: url(../img/bdsj.png) no-repeat 0 -107px;cursor: pointer;}
+
+/*绑定手机-绑定成功*/
+#dialog_bdsj_bangding .diginfo .bangdok{padding:60px 0;width:500px;}
+#dialog_bdsj_bangding .diginfo .bangdok h3{font:bold 26px/30px "微软雅黑";color:#390;margin-bottom: 30px;}
+#dialog_bdsj_bangding .diginfo .bangdok p{font-size:14px;color:#333;}
+
+/*手机绑定提示信息样式修改  wn*/
+.reg_box .msg_zt3 .row1{color:#c20000;}
+.reg_box .msg_zt3 .row1 em{background-position: -143px -108px;}
+.reg_box .msg_zt1 .row1{color:#c20000;}
+.reg_box .msg_zt1 .row1 em{background-position: -114px -108px;}
+.reg_box .msg_zt2 .row1{color:#c20000;}
+.reg_box .msg_zt2 .row1 em{background-position: -84px -108px;}
+
+/*签到双倍积分弹窗*/
+#dialog_tishi_qiandao,#dialog_tishi_qiandao .diginfo{width: 480px;background: #fff;border: none;margin: 0;padding: 0;}
+#dialog_tishi_qiandao .btn1,#dialog_tishi_qiandao .btn1:hover{display: inline-block;padding-left: 10px;margin-top:10px;height: 30px;line-height: 30px;font-weight:bold;background: url(../img/qd_ts.png) 0 0;color:#fff;text-decoration: none;}
+#dialog_tishi_qiandao .btn1 em{display: inline-block;padding-right: 10px;height: 30px;background: url(../img/qd_ts.png) 100% 0;vertical-align: top;}
+#dialog_tishi_qiandao .blockA{padding:25px;line-height: 30px;text-align: left;}
+#dialog_tishi_qiandao .blockA span{font:bold 22px/30px "微软雅黑";color:#c33;}
+#dialog_tishi_qiandao .blockA div{height:140px;padding: 10px;padding-bottom:0;background: #f4f4f4;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;margin: 20px 0 0px;}
+#dialog_tishi_qiandao .blockA .l{text-align: center;width: 110px;color:#333;}
+#dialog_tishi_qiandao .blockA .l em{display: block;width: 100px;height: 100px;background: url(../img/qd_ts.png) 0 -30px;margin: 0 auto;border:5px solid #fff;}
+#dialog_tishi_qiandao .blockA .r{width: 260px;}
+#dialog_tishi_qiandao .blockA b{float:left;text-indent: 6px;}
+#dialog_tishi_qiandao .blockA ul{float: left;width: 100%;text-align: left;line-height: 30px;}
+#dialog_tishi_qiandao .blockA li{margin-top: 2px;height: 30px;}
+#dialog_tishi_qiandao .blockA label{float:left;width: 65px;text-align: right;}
+#dialog_tishi_qiandao .blockA input{width:180px;height:20px;border:1px solid #ccc;vertical-align: middle;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius:3px;}
+#dialog_tishi_qiandao .blockA input.yzm{width: 80px;}
+#dialog_tishi_qiandao .blockA img{vertical-align: bottom;margin-left: 10px;height: 30px;}
+#dialog_tishi_qiandao .blockA .btn1,#dialog_tishi_qiandao .blockA .btn1:hover{margin-top: 5px;vertical-align: top;}
+
+#dialog_tishi_qiandao .blockB{padding:25px;line-height: 30px;}
+#dialog_tishi_qiandao .blockB  span{font:bold 22px/40px "微软雅黑";color:#c33;}
+#dialog_tishi_qiandao .blockB p em{color:#c33;font-weight: 800;margin: 0;}
+
+.head_nav .r .hdts{width: 215px;height: 60px;padding-left:10px;border: 1px solid #c9c9c9;position: absolute;right: 0;top:-64px;background: #fffbeb;line-height: 18px;}
+.head_nav .r .hdts b{display: inline-block;padding: 2px 0 1px;}
+.head_nav .r .hdts a{color:#09c;font-size:12px;display: inline;margin: 0;line-height: 18px;}
+.head_nav .r .hdts span{position: absolute;right:3px;top:2px;display: block;width:10px;height:10px;background: url(../img/bdsj.png) no-repeat -202px -4px;cursor: pointer;}
+.head_nav .r .hdts em{position: absolute;right:30px;top:60px;display: block;width:11px;height:7px;background: url(../img/bdsj.png) no-repeat -175px -25px;}
