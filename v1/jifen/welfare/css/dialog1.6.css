@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 11, 2013, 4:07:12 PM
+    Author     : sunyuw
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+/*弹窗-默认样式*/
+.diglog-wrapper{position: absolute;background:#fffbeb;border: 5px solid #e6e6e6;z-index: 100000;}
+.diglog-wrapper .diginfo{padding:10px 20px;border:1px solid #c9c9c9;}
+.diglog-wrapper .diginfo em{margin-left:5px;}
+.diglog-wrapper .diginfo u{float:left;width:18px;height:18px;overflow:hidden;background: url(http://css.tuan800.net/global/images/msg.png);}
+.diglog-wrapper .diginfo u.m0{background:none;display:none}
+.diglog-wrapper .diginfo u.m1{background-position:0 0;}
+.diglog-wrapper .diginfo u.m2{background-position:0 -18px;}
+.diglog-wrapper span.close{position: absolute;top:15px;right:15px;display:block;width:10px;height:10px;background:url(http://css.tuan800.net/global/images/bg_content.png) -388px -181px;cursor:pointer;}
+.diglog-wrapper a:hover span.close{background-position: -388px -147px;}
+
+
+#dialog_out_weldeal,#dialog_out_weldeal .diginfo{background: none;border: none;margin: 0;padding: 0;}
+/*
+ * #dialog_out_weldeal span.close{display: none;}
+*/
+.weloutdialog{width: 600px;border:1px solid #d6d5bd;}
+.weloutdialog a{color:#09c;}
+.weloutdialog a:hover{color:#c00;}
+.weloutdialog .ht{padding:0 20px;height:72px;background: url(../img/weldialog.png) repeat-x 0 -194px;line-height: 72px;text-align: right;}
+.weloutdialog-gdt .ht{height:100px;background: url(../img/t9.jpg);}
+.weloutdialog .ht .logo{float:left;width:187px;height:30px;margin-top: 16px;background: url(../img/weldialog.png) repeat-x 0 -114px;}
+.weloutdialog-gdt .ht .logo{width:220px;height:46px;background: none;}
+.weloutdialog .ht a{color:#999;font-weight: 800;}.weloutdialog .ht a:hover{color:#c00;}
+.weloutdialog .hb{height:37px;border-top:1px dotted #d2cd68;background: #fefef3;text-align: right;line-height: 37px;padding:0 20px;}
+.weloutdialog .hb input{vertical-align: text-bottom;margin: 0;}
+.weloutdialog .hc{background: #fff;padding:20px;height:250px;}
+.weloutdialog .hc p{float:right;width: 159px;height: 154px;padding:20px;background: url(../img/weldialog.png) no-repeat right top;text-align:left;line-height: 20px;}
+.weloutdialog-gdt .hc p{width: 181px;height: 170px;background: url(../img/t11.jpg);position:relative;}
+.weloutdialog-gdt .hc p a{position:absolute;left: 22px;bottom: 18px;width:142px;height:14px;}
+.weloutdialog .hc h3,.weloutdialog .hc ul{width:340px;padding:0 10px;float:left;text-align:left;font-size: 14px;line-height: 30px;}
+.weloutdialog-gdt .hc h3,.weloutdialog-gdt .hc ul{width:310px;}
+.weloutdialog .hc h3 strong{color:#c00;font-size: 16px;}
+.weloutdialog .hc li {padding-top: 10px;}
+.weloutdialog .hc li input{width:200px;height:20px;padding:4px 10px;background: url(../img/weldialog.png) no-repeat 0 -28px;border:none;font-size: 16px;}
+.weloutdialog .hc li input.error{background-position: 0 0;}
+.weloutdialog .hc li em{display:inline-block;width:20px;height:26px;margin-left:10px;background: url(../img/weldialog.png) no-repeat 0 -168px;vertical-align: top;}
+.weloutdialog .hc li span{display:block;width:200px;height:22px;margin-left:57px;padding-left: 20px;line-height: 22px;background: url(../img/weldialog.png) no-repeat 0 -146px;font-size: 12px;color:#f66;overflow: hidden;}
+.weloutdialog .hc li.yzm input{width:70px;background-position: 0 -56px;}
+.weloutdialog .hc li.yzm img{vertical-align: top;}
+.weloutdialog .hc li.yzm a{font-size: 12px;}
+.weloutdialog .hc li.btn{font-size: 12px;}
+.weloutdialog .hc li.btn input{width:68px;height:30px;margin-left:57px;background: url(../img/weldialog.png) no-repeat -176px -84px;cursor: pointer;}
+.weloutdialog .hc li.btn a{margin-left:15px;}
+.weloutdialog .hc li a.sina,.weloutdialog .hc li a.qq,.weloutdialog .hc li a.taobao,.weloutdialog .hc li a.renren{float:left;display: inline-block;width:107px;height:25px;background: url(http://z0.tuanimg.com/v1/login/img/bg1.png) no-repeat 0 0;margin-right: 3px;text-indent: -900px;overflow: hidden;margin-bottom:6px}
+.weloutdialog .hc li a.sina{background-position: 0 0;}
+.weloutdialog .hc li a.qq{background-position: 0 -25px;}
+.weloutdialog .hc li a.taobao{background-position: 0 -50px;}
+.weloutdialog .hc li a.renren{background: url(http://i0.tuan800.net/pp/v2/img/icon2-1.png) no-repeat}
+
+
+.weloutdialog .hc li a
+.weloutdialog .hc li.reg{margin-left:57px;}
+.weloutdialog .hc li.reg a{color:#000}
+.weloutdialog .hc .outbtn{display:block;width:175px;height:30px;margin-top:20px;background: url(../img/weldialog.png) no-repeat 0 -84px;}
+.weloutdialog-gdt .hc .outbtn{width:142px;height:34px;margin-top:20px;background: url(../img/t12.jpg);}
+.weloutdialog .hc h3.hwid2{width:480px;}
+.weloutdialog .hc h3.hwid2 em{padding:2px 3px;background: #e28fb4;font-size: 12px;color:#fff;margin:0 5px;font-style: normal;}
+
+#pperrmsg{font-size: 12px;color:#c00;}
