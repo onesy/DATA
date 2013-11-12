@@ -1,0 +1,9 @@
+<?php
+
+define('FRAMEWORK_LOAD_FILE_ERROR', 00000002);
+
+class CodeDefine {
+    
+    const FRAMEWORK_ROOT_UNDEFINED = 00000001;
+    const FRAMEWORK_LOAD_FILE_ERROR = 00000002;
+}
