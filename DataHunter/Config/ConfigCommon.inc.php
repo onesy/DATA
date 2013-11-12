@@ -14,9 +14,20 @@ return array(
      * class_name => /xxx/xxxx/xxx/file.class.php
      */
     'force_load' => array(
-
+        'ExampleException' => realpath(ROOT . DIRECTORY_SEPARATOR . 'Commons' . DIRECTORY_SEPARATOR . 'SexyBitch' . DIRECTORY_SEPARATOR . 'ExampleException.class.php'),
     ),
     'project_dir_paths' => array(
-        'Controller' => __dir__ . DIRECTORY_SEPARATOR . '' . '',
+        'Controller' => PROJECT_ROOT . DIRECTORY_SEPARATOR . 'Controller',
+        'Collection' => ROOT . DIRECTORY_SEPARATOR . 'Commons' . DIRECTORY_SEPARATOR . 'Collection',
+        'Model' => ROOT . DIRECTORY_SEPARATOR . 'Commons' . DIRECTORY_SEPARATOR . 'Model',
+        'Module' => ROOT . DIRECTORY_SEPARATOR . 'Commons' . DIRECTORY_SEPARATOR . 'Module',
+        'Beans' => ROOT . DIRECTORY_SEPARATOR . 'Commons' . DIRECTORY_SEPARATOR . 'Beans',
+    ),
+    'file_suffix_rule' => array(
+        'Controller' => array('.class.php'),
+        'Collection' => array('.class.php'),
+        'Model' => array('.class.php'),
+        'Module' => array('.class.php'),
+        'Beans' => array('.class.php'),
     ),
 );

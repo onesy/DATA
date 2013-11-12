@@ -137,16 +137,18 @@ class DATAFrameworkClassLoader {
                 require $files[$class_name];
             } catch (Exception $ex) {
                 echo $ex->getTraceAsString();
-                throw new FrameworkLoadFailedException('需要加载的文件' . $files[$class_name] . '不存在，框架加载失败.请检查文件.', CodeDefine::FRAMEWORK_LOAD_FILE_ERROR);
+                throw new FrameworkLoadFailedException('需要加载的文件' . $files[$class_name] . '不存在，加载失败.请检查文件.', CodeDefine::FORCE_LOAD_FILE_ERROR);
             }
         }
     }
     
-    public static function Initialize($config){
+    public static function Initialize($config) {
         self::$framework_file_necessary = $config['framework_file_necessary'];
         self::$framework_file_optional = $config['framework_file_optional'];
         self::$framework_file = array_merge(self::$framework_file_necessary, self::$framework_file_optional);
         self::$force_load = $config['force_load'];
         self::$file_suffix_rule = $config['project_dir_paths'];
+        self::AddFileSuffix($config['file_suffix_rule']);
+        self::AddLoadPath($config['project_dir_paths']);
     }
 }

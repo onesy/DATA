@@ -1,31 +1,36 @@
 <?php
-define('DEBUG', true);
-define('DATA_ROOT', __DIR__);
-define('FRAMEWORK_ROOT', __DIR__ . '/' . 'frameworks' . '/');
-global $config;
-$common_config = include_once 'ConfigCommon.inc.php';
-$config_inc = include_once 'Config.inc.php';
-$debug_config = array();
-if (defined(DEBUG) && DEBUG) {
-    global $debug_config ;
-    $debug_config = include_once 'ConfigDebug.inc.php';
-}
-$config = array_merge($common_config, $config_inc);
-$config = array_merge($config, $debug_config);
-include FRAMEWORK_ROOT . 'DATAFrameworkLoader.class.php';
+$config = include 'Config.inc.php';
 
-/*
-$data = $_GET;
-// echo json_encode($data);
-// echo "alert(" .json_encode($data). ")";
-callback($data);
-function callback($parameters) {
-    $rtn = array(
-	'callback_name' => $parameters['callback'],
-	'data' => $parameters['test'],
-    );
-    echo 'alert(' . json_encode($rtn) .');';
+if (isset($_SERVER['REMOTE_HOST']) && isset($config['domain_list'][$_SERVER['REMOTE_HOST']])) {
+    $redirect_index = $config[$_SERVER['REMOTE_HOST']];
+} else {
+    throw new Exception('服务器无法找到该域名对应的服务项.请联系管理员', 00000000);
 }
- * 
- */
-// http://z0.tuanimg.com/v1/2012/javascripts/utm_cookie.min.js
+
+if (isset($_SERVER['REMOTE_ADDR']) && isset($config['ip_list'][$_SERVER['REMOTE_ADDR']])) {
+    $is_allowed = false;
+    $remote_ip = $_SERVER['REMOTE_ADDR'];
+    // 设置了黑白名单.黑白名单只能设置一个.
+    if (isset($config['ip_list'][$_SERVER['REMOTE_HOST']]['forbidden'])) {
+        $forbidden = $config['ip_list'][$_SERVER['REMOTE_HOST']]['forbidden'];
+        if(! in_array($remote_ip, $forbidden)) {
+            $is_allowed = true;
+        }
+    } else if (isset($config['ip_list'][$_SERVER['REMOTE_HOST']]['allowed'])) {
+        $allowed = $config['ip_list'][$_SERVER['REMOTE_HOST']]['allowed'];
+        if (in_array($remote_ip, $allowed)) {
+            $is_allowed = true;
+        }
+    }
+    if (! $is_allowed) {
+        header('HTTP/1.0 403 Forbidden');
+        die;
+    }
+}
+
+if ($real_path = realpath($redirect_index)) {
+    include $real_path;
+} else {
+    header("Status: 404 Not Found");
+    die;
+}
