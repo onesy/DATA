@@ -23,7 +23,7 @@ class DATAFrameworkClassLoader {
      * 
      * @var type 
      */
-    public static $default_file_suffix_rule = array('all' => array('class' => '.class.php', 'inc' => '.inc.php', 'tpl' => '.tpl.php'));
+    public static $default_file_suffix_rule = array('all' => array('.class.php', '.inc.php', '.tpl.php'));
     
     public static $file_suffix_rule = array();
     

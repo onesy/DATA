@@ -22,7 +22,4 @@ return array(
              */
         ),
     ),
-    'model' => array(
-        'topology' => 'direct'
-    ),
 );

@@ -1,6 +1,6 @@
 <?php
 
-include 'DATAFramework.class.php';
+include 'DATAFrameworkClassLoader.class.php';
 
 function DATAautoload($class_name){
     DATAFrameworkClassLoader::DATAFileLoader($class_name);

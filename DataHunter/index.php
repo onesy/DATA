@@ -14,6 +14,10 @@ $config = array_merge($common_config, $config_inc);
 $config = array_merge($config, $debug_config);
 include FRAMEWORK_ROOT . 'DATAFrameworkLoader.class.php';
 
+/**
+ * 初始化框架.以及装载函数.
+ */
+DATAFrameworkClassLoader::Initialize($config);
 /*
 $data = $_GET;
 // echo json_encode($data);
