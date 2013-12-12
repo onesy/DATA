@@ -1044,7 +1044,7 @@ class DATADbConnection
     }
 }
 
-class JMDbMysql extends JMDbConnection
+class DATADbMysql extends DATADbConnection
 {
     /**
      * @static
