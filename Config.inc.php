@@ -4,7 +4,7 @@
  */
 return array(
     'domain_list' => array(
-        'zhua.data.com' => __DIR__ . DIRECTORY_SEPARATOR . 'DataHunter' . DIRECTORY_SEPARATOR . 'index.php'
+        'zhua.data.com' => __DIR__ . DIRECTORY_SEPARATOR . 'PlanY' . DIRECTORY_SEPARATOR . 'index.php'
     ),
     /**
      * IP 访问限制.

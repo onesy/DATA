@@ -15,9 +15,11 @@ class Controller_Base {
         return self::$instance[$classname];
     }
     
-    public static function Init($classname){
+    public static function Init($classname) {
         
-        $args = empty($_GET) ? $_POST : $_GET;
+        $args = DATASystem::GetRepuestAll();
+        
+        $cookies = DATASystem::GetCookieAll();
         
         if (empty($args)) {
             throw new ProjectException("参数为空");
@@ -28,5 +30,17 @@ class Controller_Base {
         self::$instance[$classname]->module = isset($args['module']) ? $args['module'] : '';
 
         self::$instance[$classname]->data = isset($args['data']) ? $args['data'] : '';
+        
+        self::$instance[$classname]->referer_site = isset($args['referer_site']) ? $args['referer_site'] : '';
+        
+        self::$instance[$classname]->from = isset($args['from']) ? $args['from'] : '';
+        
+        self::$instance[$classname]->uid = isset($cookies['uid']) ? $cookies['uid'] : '';
+        
+        self::$instance[$classname]->token = isset($cookies['token']) ? $cookies['token'] : '';
+        
+        self::$instance[$classname]->session_id = isset($cookies['PHPSESSID']) ? $cookies['PHPSESSID'] : '';
+        
+        self::$instance[$classname]->site = isset($cookies['current_site']) ? $cookies['current_site'] : 'cd';
     }
 }

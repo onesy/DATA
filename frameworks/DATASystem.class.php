@@ -20,6 +20,22 @@ class DATASystem
     static public function GetRequest($r,$default=null){
         return isset($_REQUEST[$r])?$_REQUEST[$r]:$default;
     }
+    
+    static public function GetGetAll($default = null){
+        return isset($_GET) ? $_GET : $default;
+    }
+    
+    static public function GetPostAll($default = null) {
+        return isset($_POST) ? $_POST : $default;
+    }
+    
+    static public function GetRepuestAll($default = null) {
+        return isset($_REQUEST) ? $_REQUEST : $default;
+    }
+    
+    static public function GetCookieAll($default = null) {
+        return isset($_COOKIE) ? $_COOKIE : $default;
+    }
 
     static public function GetPostInt($r,$default=0){
         return isset($_POST[$r])?intval($_POST[$r]):$default;
